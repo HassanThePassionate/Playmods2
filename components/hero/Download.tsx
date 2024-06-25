@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 
 const Download = () => {
   return (
-    <div className='mt-3 px-2 py-2 '>
+    <div className='mt-3 px-2  '>
       <div className='flex gap-4  '>
         <div>
           <Image

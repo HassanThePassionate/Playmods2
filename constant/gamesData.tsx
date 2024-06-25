@@ -1,66 +1,120 @@
+function getRandomSize() {
+  const sizes = [
+    "13 MB",
+    "25 MB",
+    "50 MB",
+    "75 MB",
+    "100 MB",
+    "200 MB",
+    "500 MB",
+    "750 MB",
+    "1.0 GB",
+    "1.2 GB",
+    "2.0 GB",
+  ];
+  const randomIndex = Math.floor(Math.random() * sizes.length);
+  return sizes[randomIndex];
+}
+
 const GamesData = [
   {
     id: 1,
     img: "https://qn-resource.playmods.net/prd/125/20240429/dce2e766-9ab5-4719-95b2-21a228c04113.png-160webp",
     name: "Toca Life World",
-    catagory: "Mods inside",
+    catagory: {
+      main: "Mods inside",
+      sub: "Arcade",
+    },
     rates: 7.3,
+    size: getRandomSize(),
   },
   {
     id: 2,
     img: "https://qn-resource.playmods.net/prd/159/20240510/bfd9c62a-68d8-48a9-b8cf-66ead72a51f3.png-160webp",
     name: "Avatar World",
-    catagory: "Unlock VIP",
+    catagory: {
+      main: "Unlock VIP",
+      sub: "Adventure",
+    },
     rates: 7.1,
+    size: getRandomSize(),
   },
   {
     id: 3,
     img: "https://qn-resource.playmods.net/prd/269/20240104/b0001ca0-189f-440f-8990-a474cf5aee60.png-160webp",
     name: "My Town World - Mega Kids Game",
-    catagory: "Unlocked All",
+    catagory: {
+      main: "Unlocked All",
+      sub: "Educational",
+    },
     rates: 6.8,
+    size: getRandomSize(),
   },
   {
     id: 4,
     img: "https://qn-resource.playmods.net/prd/image/da883b26-c48f-430a-b6cd-fd12ec1d6ac8.png-160webp",
     name: "Chicken World",
-    catagory: "Unlimited Money",
+    catagory: {
+      main: "Unlimited Money",
+      sub: "Simulation",
+    },
     rates: 7.1,
+    size: getRandomSize(),
   },
   {
     id: 5,
     img: "https://qn-resource.playmods.net/prd/159/20240529/241c4199-b697-4456-9b06-b8bc9331da77.png-160webp",
     name: "亂鬥三國/Fighting Three Kingdoms",
-    catagory: "1折超爽版",
+    catagory: {
+      main: "1折超爽版",
+      sub: "Action",
+    },
     rates: 10.1,
+    size: getRandomSize(),
   },
   {
     id: 6,
     img: "https://qn-resource.playmods.net/prd/image/f3358cae-2ecc-4279-9229-cf9a3f3bb47f.png-160webp",
     name: "Manage Supermarket Simulator",
-    catagory: "Unlimited banknotes",
+    catagory: {
+      main: "Unlimited banknotes",
+      sub: "Simulation",
+    },
     rates: 5.7,
+    size: getRandomSize(),
   },
   {
     id: 7,
     img: "https://qn-resource.playmods.net/prd/image/aa9a63e8-107a-4acc-98e7-255bc9d05a0e.png-160webp",
     name: "PK XD - Explore Universes!",
-    catagory: "Mod Menu",
+    catagory: {
+      main: "Mod Menu",
+      sub: "Adventure",
+    },
     rates: 6.8,
+    size: getRandomSize(),
   },
   {
     id: 8,
     img: "https://qn-resource.playmods.net/prd/161/20221111/b802f36d-0c85-4543-aaf7-5c4553c4214a.jpg-160webp",
     name: "FIFA Mobile: FIFA World Cup",
-    catagory: "Mod Menu",
+    catagory: {
+      main: "Mod Menu",
+      sub: "Sports",
+    },
     rates: 6.2,
+    size: getRandomSize(),
   },
   {
     id: 9,
     img: "https://qn-resource.playmods.net/prd/image/9f186d07-fb10-4c8c-b907-84224804f489.png-160webp",
     name: "Survivor!.io",
-    catagory: "Mod Menu",
+    catagory: {
+      main: "Mod Menu",
+      sub: "Action",
+    },
     rates: 6.1,
+    size: getRandomSize(),
   },
 ];
 

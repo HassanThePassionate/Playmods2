@@ -1,14 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaWindows } from "react-icons/fa";
 import { BsStarFill } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
 
 interface GameListProps {
   data: Array<{
     img: string;
     name: string;
-    catagory: string;
+    catagory: {
+      main: string;
+      sub: string;
+    };
     rates: number;
     id: number;
+    size: number;
   }>;
 }
 
@@ -19,7 +25,7 @@ const GamesList = ({ data }: GameListProps) => {
         <Link
           href={`/game/${elem.id}`}
           key={elem.img}
-          className='flex gap-2 items-center transition duration-300 rounded-md hover:bg-[#f3f3f3] hover:text-blue-600 px-[10px] py-[10px]'
+          className='flex gap-2 relative items-center link transition duration-300 rounded-md hover:bg-[#f3f3f3] hover:text-blue-600 px-[10px] py-[10px]'
         >
           <Image
             src={elem.img}
@@ -31,11 +37,17 @@ const GamesList = ({ data }: GameListProps) => {
           <div className='flex flex-col gap-1'>
             <h2 className='text-sm font-semibold'>{elem.name}</h2>
             <span className='text-[12px] text-[#999] hover:text-[#555]'>
-              {elem.catagory}
+              {elem.catagory.main}
             </span>
-            <div className='flex items-center gap-2'>
-              <BsStarFill color='yellow' size={14} />
-              <span className='text-[12px]'>{elem.rates}</span>
+            <div className='flex items-center gap-[5px] '>
+              <div className='flex items-center gap-[4px]'>
+                <BsStarFill color='#FFE234' size={12} />
+                <span className='text-[12px]'>{elem.rates}</span>
+              </div>
+              <span className='truncate text-[10px] text-[#777] w-14'>
+                {elem.catagory.sub}
+              </span>
+              <span className=' text-[10px] text-[#999]'>{elem.size}</span>
             </div>
           </div>
         </Link>

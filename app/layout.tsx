@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Hero from "@/components/hero/Hero";
+import Footer from "@/components/footer/Footer";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
@@ -22,17 +23,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang='en' suppressHydrationWarning>
       <body className={roboto.className}>
         <Navbar />
-        <div className="containers">
-          <div className="flex gap-x-3 mt-4">
-            <div className=" w-[804px] ">{children}</div>
-            <div className="h-full w-[326px] ">
+        <div className='containers'>
+          <div className='flex gap-x-3 mt-4'>
+            <div className=' w-[804px] '>{children}</div>
+            <div className='h-full w-[326px] '>
               <Hero />
             </div>
           </div>
         </div>
+        <Footer />
       </body>
     </html>
   );

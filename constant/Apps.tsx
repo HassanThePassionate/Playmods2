@@ -72,3 +72,4 @@ const Apps = [
     title: "Tools",
   },
 ];
+export default Apps;

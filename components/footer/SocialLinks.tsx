@@ -3,22 +3,20 @@ import Link from "next/link";
 
 const SocialLinks = () => {
   return (
-    <div>
-      <div className="w-[24%]">
-        <h3 className="mb-[20px] font-bold text-sm uppercase">FOLLOW US</h3>
-        <ul className="flex flex-col gap-3 text-sm ">
-          {data.map((elem) => {
-            return (
-              <li key={elem.img}>
-                <Link href="#" className="flex items-center gap-2">
-                  <Image src={elem.img} alt="icon" height={27} width={27} />
-                  <span>{elem.title}</span>
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+    <div className='w-[24%]'>
+      <h3 className='mb-[20px] font-bold text-sm uppercase'>FOLLOW US</h3>
+      <ul className='flex flex-col gap-3 text-sm '>
+        {data.map((elem) => {
+          return (
+            <li key={elem.img} className='hover:bg-slate-100 w-full'>
+              <Link href='#' className='flex items-center gap-2'>
+                <Image src={elem.img} alt='icon' height={27} width={27} />
+                <span>{elem.title}</span>
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 };

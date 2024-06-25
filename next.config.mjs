@@ -6,6 +6,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "qn-resource.playmods.net",
       },
+      {
+        protocol: "https",
+        hostname: "savemp3.net",
+      },
     ],
   },
 };

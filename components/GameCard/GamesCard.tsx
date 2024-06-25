@@ -12,12 +12,21 @@ import {
 import GameDes from "./GameDes";
 import Slider from "./GameSlider";
 import Image from "next/image";
+import { useState } from "react";
+import { Loader2 } from "lucide-react";
 interface GameCard {
   img: string;
   title: string;
   rate: number;
 }
 const GamesCard = ({ img, title, rate }: GameCard) => {
+  const [loading, setLoading] = useState(false);
+  const handleClick = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  };
   return (
     <>
       <Breadcrumb className='my-2 ml-1'>
@@ -66,7 +75,10 @@ const GamesCard = ({ img, title, rate }: GameCard) => {
                   >
                     {title} Mod Apk v1.0 (Mod <br /> Menu/Unlock/Latest Version)
                   </Link>
-                  <span className='pt-[10px]'>App Name: {title}</span>
+                  <span className=' py-[5px] block text-sm'>
+                    App Name: {title}
+                  </span>
+                  <span className='block text-sm'>PlateForm: Windows</span>
                   <div className='text-sm text-[#656570] flex gap-4 pt-[10px]'>
                     <span>1.0 for Android </span>
                     <span>Updated on May 11, 2024</span>
@@ -75,15 +87,22 @@ const GamesCard = ({ img, title, rate }: GameCard) => {
                     <Link
                       href='#'
                       className='bg-[#5342F6] flex items-center gap-3 border-2 border-transparent hover:bg-blue-700  justify-center py-3 text-sm text-white px-[40px] rounded-full mt-4'
+                      onClick={handleClick}
                     >
-                      <Image
-                        src='https://qn-resource.playmods.net/html/2024061901/static/www/images/icon-detail-dn.png'
-                        alt='img'
-                        height={25}
-                        width={25}
-                      />
+                      {loading ? (
+                        <Loader2 className=' animate-spin' size={25} />
+                      ) : (
+                        <Image
+                          src='https://qn-resource.playmods.net/html/2024061901/static/www/images/icon-detail-dn.png'
+                          alt='img'
+                          height={25}
+                          width={25}
+                        />
+                      )}
+
                       <span>Fast Download</span>
                     </Link>
+
                     <Link
                       href='#'
                       className=' border-2 border-[#5342F6] flex items-center gap-1 justify-center h-[49px] text-sm text-[#5442F6] px-[40px] rounded-full mt-4 hover:bg-[#5342F6] hover:text-white transition duration-300'
@@ -92,12 +111,6 @@ const GamesCard = ({ img, title, rate }: GameCard) => {
                       <span className='text-[12px]'>(573.8MB)</span>
                     </Link>
                   </div>
-                  <Link
-                    href='#'
-                    className='text-[12px] text-[#5642F6] underline mt-[14px] mr-8 flex justify-end '
-                  >
-                    Play this game on Window PC
-                  </Link>
                 </div>
                 <div className='relative'>
                   <Image

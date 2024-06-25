@@ -8,9 +8,9 @@ function getRandomSize() {
     "200 MB",
     "500 MB",
     "750 MB",
-    "1 GB",
+    "1.0 GB",
     "1.2 GB",
-    "2 GB",
+    "2.0 GB",
   ];
   const randomIndex = Math.floor(Math.random() * sizes.length);
   return sizes[randomIndex];

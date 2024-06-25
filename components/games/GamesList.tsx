@@ -6,15 +6,12 @@ import { HiDownload } from "react-icons/hi";
 
 interface GameListProps {
   data: Array<{
+    id: number;
     img: string;
     name: string;
-    catagory: {
-      main: string;
-      sub: string;
-    };
+    catagory: { main: string; sub: string };
     rates: number;
-    id: number;
-    size: number;
+    size: string;
   }>;
 }
 

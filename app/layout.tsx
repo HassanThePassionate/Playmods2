@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Hero from "@/components/hero/Hero";
 import Footer from "@/components/footer/Footer";
+import SideLinks from "@/components/SideLinks";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
@@ -35,6 +36,7 @@ export default function RootLayout({
           </div>
         </div>
         <Footer />
+        <SideLinks />
       </body>
     </html>
   );

@@ -3,13 +3,13 @@ import Link from "next/link";
 
 const Tags = () => {
   return (
-    <div className="pt-5">
+    <div className='pt-5'>
       {data.map((data) => {
         return (
-          <Link href="#" key={data.title}>
+          <Link href='#' key={data.title}>
             <Badge
-              variant="secondary"
-              className="px-[26px] hover:bg-[#e0dede] h-[32px] font-normal text-sm mr-[8px] mb-[14px]"
+              variant='secondary'
+              className='px-[26px] hover:bg-[#ddd] h-[32px] font-normal text-sm mr-[8px] mb-[14px]'
             >
               {data.title}
             </Badge>

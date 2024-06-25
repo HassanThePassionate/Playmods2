@@ -30,7 +30,7 @@ const Languages = () => {
       <DropdownMenuContent className='grid grid-cols-2 py-2'>
         {data.map((lang) => {
           return (
-            <DropdownMenuItem>
+            <DropdownMenuItem key={lang.name}>
               <Link
                 href='#'
                 className='flex items-center hover:text-blue-600 hover:bg-[#fbfbfb] gap-3 w-[200px] h-[47px] border py-2 px-3 rounded-full'

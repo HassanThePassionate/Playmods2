@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import GameDes from "./GameDes";
 import Slider from "./GameSlider";
+import Image from "next/image";
 interface GameCard {
   img: string;
   title: string;
@@ -50,7 +51,7 @@ const GamesCard = ({ img, title, rate }: GameCard) => {
         <CardContent className='p-0'>
           <div className='px-6'>
             <div className='flex  gap-4 mt-10'>
-              <img
+              <Image
                 src={img}
                 alt='img'
                 height={164}
@@ -75,7 +76,7 @@ const GamesCard = ({ img, title, rate }: GameCard) => {
                       href='#'
                       className='bg-[#5342F6] flex items-center gap-3 border-2 border-transparent hover:bg-blue-700  justify-center py-3 text-sm text-white px-[40px] rounded-full mt-4'
                     >
-                      <img
+                      <Image
                         src='https://qn-resource.playmods.net/html/2024061901/static/www/images/icon-detail-dn.png'
                         alt='img'
                         height={25}
@@ -99,7 +100,7 @@ const GamesCard = ({ img, title, rate }: GameCard) => {
                   </Link>
                 </div>
                 <div className='relative'>
-                  <img
+                  <Image
                     src='https://qn-resource.playmods.net/html/2024061901/static/www/images/icon-details-score-bg.png'
                     alt='img'
                     height={70}

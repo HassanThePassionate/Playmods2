@@ -39,15 +39,15 @@ const GamesList = ({ data }: GameListProps) => {
             <span className='text-[12px] text-[#999] hover:text-[#555]'>
               {elem.catagory.main}
             </span>
-            <div className='flex items-center gap-[5px] '>
+            <div className='flex items-center gap-[4px] '>
               <div className='flex items-center gap-[4px]'>
                 <BsStarFill color='#FFE234' size={12} />
                 <span className='text-[12px]'>{elem.rates}</span>
               </div>
-              <span className='truncate text-[10px] text-[#777] w-14'>
+              <span className='truncate text-[12px] text-[#777] w-12'>
                 {elem.catagory.sub}
               </span>
-              <span className=' text-[10px] text-[#999]'>{elem.size}</span>
+              <span className=' text-[12px] text-[#999]'>{elem.size}</span>
             </div>
           </div>
         </Link>

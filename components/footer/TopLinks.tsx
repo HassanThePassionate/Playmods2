@@ -1,19 +1,24 @@
 import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
 
 const TopLinks = () => {
   return (
     <div>
-      <ul className='flex flex-wrap list'>
-        <h4 className='text-sm font-bold mr-[44px] mb-[15px]'>
+      <ul className='flex items-center flex-wrap list'>
+        <h4 className='text-sm font-bold mr-[20px] mb-[15px]'>
           Friendly Links:
         </h4>
         {data.map((elem) => {
           return (
             <li
-              className='hover:underline mr-[44px] mb-[10px]'
+              className='hover:underline mr-[12px] mb-[10px]'
               key={elem.title}
             >
-              <Link href='#'>{elem.title}</Link>
+              <Link href='#'>
+                <Badge variant='outline' className='py-1.5 hover:bg-[#fbfbfb]'>
+                  {elem.title}
+                </Badge>
+              </Link>
             </li>
           );
         })}

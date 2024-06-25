@@ -1,5 +1,6 @@
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 interface CategoryHeadingProps {
   click: () => void;
   category: boolean;
@@ -25,8 +26,11 @@ const CategoryHeading = ({ click, category }: CategoryHeadingProps) => {
           Apps
         </span>
       </div>
-      <Link href='#'>
-        <ChevronRight size={16} />
+      <Link
+        href='#'
+        className='hover:bg-[#e9e9e9] transition duration-300 p-2 rounded-full'
+      >
+        <FaArrowRight size={16} />
       </Link>
     </div>
   );

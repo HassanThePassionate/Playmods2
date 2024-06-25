@@ -11,7 +11,7 @@ const GamesHeading = ({ text }: GamesHeadingProps) => {
         href='#'
         className='hover:bg-[#e9e9e9] transition duration-300 p-2 rounded-full'
       >
-        <FaArrowRight size={18} />
+        <FaArrowRight size={16} />
       </Link>
     </div>
   );

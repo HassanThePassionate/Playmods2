@@ -32,8 +32,9 @@ const GamesList = ({ data }: GameListProps) => {
             alt='img'
             height={80}
             width={80}
-            className='h-[80px] w-[80px] rounded-3xl'
+            className='h-[80px] w-[80px] rounded-3xl relative overflow-hidden'
           />
+
           <div className='flex flex-col gap-1'>
             <h2 className='text-sm font-semibold'>{elem.name}</h2>
             <span className='text-[12px] text-[#999] hover:text-[#555]'>

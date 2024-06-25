@@ -1,6 +1,8 @@
 import Link from "next/link";
 import SocialLinks from "./SocialLinks";
-
+import { IoMdContact } from "react-icons/io";
+import { FaAndroid } from "react-icons/fa6";
+import { MdOutlinePhoneAndroid } from "react-icons/md";
 const Links = () => {
   return (
     <div className='px-4 flex justify-between gap-8 mt-[20px]'>
@@ -8,15 +10,21 @@ const Links = () => {
         <h3 className='mb-[20px] text-start font-bold text-sm uppercase'>
           Solutions
         </h3>
-        <ul className='flex flex-col gap-2 text-sm list-disc'>
+        <ul className='flex flex-col gap-3 text-sm '>
           <li className='  hover:bg-slate-100  w-full'>
-            <Link href='#'>Mobile Version</Link>
+            <Link href='#' className='flex items-center gap-2'>
+              <MdOutlinePhoneAndroid size={18} /> Mobile Version
+            </Link>
           </li>
-          <li className='  hover:bg-slate-100 w-full'>
-            <Link href='#'>PlayMods For Android</Link>
+          <li className='  hover:bg-slate-100 w-full '>
+            <Link href='#' className='flex items-center gap-2'>
+              <FaAndroid size={16} /> PlayMods For Android
+            </Link>
           </li>
           <li className='  hover:bg-slate-200 w-full'>
-            <Link href='#'>Contact Us</Link>
+            <Link href='#' className='flex items-center gap-2'>
+              <IoMdContact size={16} /> Contact Us
+            </Link>
           </li>
         </ul>
       </div>

@@ -14,7 +14,7 @@ const Slider = () => {
       <Swiper
         navigation={true}
         modules={[Navigation]}
-        slidesPerView='auto'
+        slidesPerView={"auto"}
         className='mySwiper'
         spaceBetween={15}
         style={{
@@ -29,7 +29,7 @@ const Slider = () => {
             width={672}
           />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='swiper_slide'>
           <Image
             src='https://qn-resource.playmods.net/prd/image/c8c7129e-0bed-4d83-adda-f220a5c3f15f.png-subjectDetailwebp'
             alt='img'
@@ -37,7 +37,7 @@ const Slider = () => {
             width={672}
           />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='swiper_slide'>
           <Image
             src='https://qn-resource.playmods.net/prd/image/884d7e78-df39-4f47-b1e7-47e3e889fa82.png-subjectDetailwebp'
             alt='img'
@@ -45,7 +45,7 @@ const Slider = () => {
             width={672}
           />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='swiper_slide'>
           <Image
             src='https://qn-resource.playmods.net/prd/image/7ccf1b18-271f-4ad5-92ef-a7d8734352b0.png-subjectDetailwebp'
             alt='img'

@@ -3,7 +3,6 @@ import gamesData from "@/constant/gamesData";
 import { Card, CardContent } from "../ui/card";
 import GamesHeading from "./GamesHeading";
 import GamesList from "./GamesList";
-import Collections from "./collections/Collection";
 import GameCard from "./GameCard";
 import AppsCard from "./AppsCard";
 
@@ -13,22 +12,11 @@ interface GamesSectionProps {
 }
 
 const GamesCategoryCard = ({ heading, data }: GamesSectionProps) => (
-  <Card className='bg-white mt-5 overflow-hidden'>
-    <CardContent className='p-0'>
+  <Card className='bg-white mt-5 overflow-hidden '>
+    <CardContent className='p-[40px]'>
       <GamesHeading text={heading} />
-      <div className='p-4'>
+      <div>
         <GamesList data={data} />
-      </div>
-    </CardContent>
-  </Card>
-);
-
-const ListCollectionsWrapper = () => (
-  <Card className='bg-white mt-5 overflow-hidden'>
-    <CardContent className='p-0'>
-      <GamesHeading text='Topic' />
-      <div className='p-4'>
-        <Collections />
       </div>
     </CardContent>
   </Card>
@@ -37,8 +25,6 @@ const ListCollectionsWrapper = () => (
 const Games = () => {
   const sections = [
     { heading: "Mods inside", data: gamesData },
-    { heading: "Pre-registration Games", data: gamesData },
-    { heading: "Pre-registration Games", data: gamesData },
     { heading: "Pre-registration Games", data: gamesData },
   ];
 
@@ -53,7 +39,6 @@ const Games = () => {
           data={section.data}
         />
       ))}
-      <ListCollectionsWrapper />
       <GameCard title="Players' Favorite" />
       <AppsCard />
     </>

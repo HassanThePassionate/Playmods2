@@ -6,12 +6,6 @@ export default function Home() {
   return (
     <div>
       <Sidebar />
-      <Alert variant="destructive" className="mt-6">
-        <AlertDescription>
-          PlayMods.net is the only official website of PlayMods App. Please do
-          not visit other fake url
-        </AlertDescription>
-      </Alert>
       <Games />
     </div>
   );

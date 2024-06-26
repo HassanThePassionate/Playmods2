@@ -10,7 +10,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 import Image from "next/image";
 const Sidebar = () => {
   return (
-    <div>
+    <div className='mb-4'>
       <Swiper
         navigation={true}
         loop={true}
@@ -19,17 +19,17 @@ const Sidebar = () => {
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Navigation]}
-        className="mySwiper"
+        className='mySwiper'
       >
         {data.map((elem) => {
           return (
             <SwiperSlide key={elem.img}>
               <Image
                 src={elem.img}
-                alt="img"
+                alt='img'
                 height={416}
                 width={804}
-                className="h-[416px] w-[804px] "
+                className='h-[416px] w-[804px] '
               />
             </SwiperSlide>
           );

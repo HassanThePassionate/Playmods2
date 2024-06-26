@@ -6,11 +6,11 @@ interface MenuListProps {
 }
 const MenuList = ({ title, icon }: MenuListProps) => {
   return (
-    <Link href="#" className=" flex items-center flex-col">
-      <div className="img">
-        <Image src={icon} alt="img" height={36} width={36} />
+    <Link href='#' className=' flex items-center flex-col'>
+      <div className='img'>
+        <Image src={icon} alt='img' height={36} width={36} />
       </div>
-      <span className="text-sm">{title}</span>
+      <span className='text-sm'>{title}</span>
     </Link>
   );
 };

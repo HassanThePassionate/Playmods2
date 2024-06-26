@@ -8,10 +8,10 @@ interface GameCardProps {
 const GameCard = ({ title }: GameCardProps) => {
   return (
     <div>
-      <Card className='bg-white mt-5 overflow-hidden'>
-        <CardContent className='p-0'>
+      <Card className='bg-white mt-5 overflow-hidden '>
+        <CardContent className='p-[40px]'>
           <GamesHeading text={title} />
-          <div className='p-4'>
+          <div>
             <GamesList data={GamesData} />
           </div>
         </CardContent>

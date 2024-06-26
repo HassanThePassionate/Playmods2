@@ -1,3 +1,4 @@
+import Trending from "../Trending";
 import GamesCategory from "../category/GamesCategory";
 import Download from "./Download";
 import Search from "./Search";
@@ -16,6 +17,9 @@ const Hero = () => {
       <div className='h-[300px] mt-6 w-full bg-white '></div>
       <div className='h-full mt-6 w-full bg-white '>
         <GamesCategory />
+      </div>
+      <div className='h-full mt-6 w-full bg-white p-5 '>
+        <Trending />
       </div>
     </div>
   );

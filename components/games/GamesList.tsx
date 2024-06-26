@@ -17,34 +17,35 @@ interface GameListProps {
 
 const GamesList = ({ data }: GameListProps) => {
   return (
-    <div className='grid grid-cols-3 gap-2'>
+    <div className='grid grid-cols-2 gap-y-5 gap-x-3'>
       {data.map((elem) => (
         <Link
           href={`/game/${elem.id}`}
           key={elem.img}
-          className='flex gap-2 relative items-center link transition duration-300 rounded-md hover:bg-[#f3f3f3] hover:shadow-md hover:text-blue-600 px-[10px] py-[10px]'
+          className='flex gap-2 relative items-center link transition duration-300 rounded-md hover:bg-[#f3f3f3] hover:shadow-md hover:text-blue-600'
         >
           <Image
             src={elem.img}
             alt='img'
             height={80}
             width={80}
-            className='h-[80px] w-[80px] rounded-3xl relative overflow-hidden'
+            className='h-[80px] w-[80px] rounded-xl relative overflow-hidden'
           />
 
           <div className='flex flex-col gap-1'>
-            <h2 className='text-sm font-semibold'>{elem.name}</h2>
-            <span className='text-[12px] text-[#999] hover:text-[#555]'>
+            <h2 className='text-[16px] '>{elem.name}</h2>
+            <span className='text-[14px] text-[#999] hover:text-[#555]'>
               {elem.catagory.main}
             </span>
-            <div className='flex items-center gap-[4px] '>
-              <div className='flex items-center gap-[4px]'>
-                <BsStarFill color='#FFE234' size={12} />
-                <span className='text-[12px]'>{elem.rates}</span>
-              </div>
-              <span className='truncate text-[12px] text-[#777] w-12'>
+            <div className='flex items-center gap-[10px] '>
+              <span className='truncate text-[12px] text-[#777] '>
                 {elem.catagory.sub}
               </span>
+              <div className='flex items-center gap-[2px]'>
+                <BsStarFill color='#666' size={10} />
+                <span className='text-[12px] text-[#999]'>{elem.rates}</span>
+              </div>
+
               <span className=' text-[12px] text-[#999]'>{elem.size}</span>
             </div>
           </div>

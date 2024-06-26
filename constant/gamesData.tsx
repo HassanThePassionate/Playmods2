@@ -1,21 +1,3 @@
-function getRandomSize() {
-  const sizes = [
-    "13 MB",
-    "25 MB",
-    "50 MB",
-    "75 MB",
-    "100 MB",
-    "200 MB",
-    "500 MB",
-    "750 MB",
-    "1.0 GB",
-    "1.2 GB",
-    "2.0 GB",
-  ];
-  const randomIndex = Math.floor(Math.random() * sizes.length);
-  return sizes[randomIndex];
-}
-
 const GamesData = [
   {
     id: 1,
@@ -26,7 +8,7 @@ const GamesData = [
       sub: "Arcade",
     },
     rates: 7.3,
-    size: getRandomSize(),
+    size: "300 MB",
   },
   {
     id: 2,
@@ -37,7 +19,7 @@ const GamesData = [
       sub: "Adventure",
     },
     rates: 7.1,
-    size: getRandomSize(),
+    size: "290 MB",
   },
   {
     id: 3,
@@ -48,7 +30,7 @@ const GamesData = [
       sub: "Educational",
     },
     rates: 6.8,
-    size: getRandomSize(),
+    size: "139 MB",
   },
   {
     id: 4,
@@ -59,7 +41,7 @@ const GamesData = [
       sub: "Simulation",
     },
     rates: 7.1,
-    size: getRandomSize(),
+    size: "150 MB",
   },
   {
     id: 5,
@@ -70,7 +52,7 @@ const GamesData = [
       sub: "Action",
     },
     rates: 10.1,
-    size: getRandomSize(),
+    size: "1.2 GB",
   },
   {
     id: 6,
@@ -81,7 +63,7 @@ const GamesData = [
       sub: "Simulation",
     },
     rates: 5.7,
-    size: getRandomSize(),
+    size: "700 MB",
   },
   {
     id: 7,
@@ -92,7 +74,7 @@ const GamesData = [
       sub: "Adventure",
     },
     rates: 6.8,
-    size: getRandomSize(),
+    size: "340 MB",
   },
   {
     id: 8,
@@ -103,19 +85,19 @@ const GamesData = [
       sub: "Sports",
     },
     rates: 6.2,
-    size: getRandomSize(),
+    size: "906 MB",
   },
-  {
-    id: 9,
-    img: "https://qn-resource.playmods.net/prd/image/9f186d07-fb10-4c8c-b907-84224804f489.png-160webp",
-    name: "Survivor!.io",
-    catagory: {
-      main: "Mod Menu",
-      sub: "Action",
-    },
-    rates: 6.1,
-    size: getRandomSize(),
-  },
+  // {
+  //   id: 9,
+  //   img: "https://qn-resource.playmods.net/prd/image/9f186d07-fb10-4c8c-b907-84224804f489.png-160webp",
+  //   name: "Survivor!.io",
+  //   catagory: {
+  //     main: "Mod Menu",
+  //     sub: "Action",
+  //   },
+  //   rates: 6.1,
+  //   size: getRandomSize(),
+  // },
 ];
 
 export default GamesData;

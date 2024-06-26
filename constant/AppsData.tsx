@@ -1,21 +1,3 @@
-function getRandomSize() {
-  const sizes = [
-    "13 MB",
-    "25 MB",
-    "50 MB",
-    "75 MB",
-    "100 MB",
-    "200 MB",
-    "500 MB",
-    "750 MB",
-    "1.0 GB",
-    "1.2 GB",
-    "2.0 GB",
-  ];
-  const randomIndex = Math.floor(Math.random() * sizes.length);
-  return sizes[randomIndex];
-}
-
 const AppsData = [
   {
     id: 1,
@@ -26,7 +8,7 @@ const AppsData = [
       sub: "Tools",
     },
     rates: 6.1,
-    size: getRandomSize(),
+    size: "300MB",
   },
   {
     id: 2,
@@ -37,7 +19,7 @@ const AppsData = [
       sub: "Photography",
     },
     rates: 6.1,
-    size: getRandomSize(),
+    size: "2.0 GB",
   },
   {
     id: 3,
@@ -48,7 +30,7 @@ const AppsData = [
       sub: "Tools",
     },
     rates: 6.8,
-    size: getRandomSize(),
+    size: "1.1 GB",
   },
   {
     id: 4,
@@ -59,7 +41,7 @@ const AppsData = [
       sub: "Health & Fitness",
     },
     rates: 7.1,
-    size: getRandomSize(),
+    size: "200 MB",
   },
   {
     id: 5,
@@ -70,7 +52,7 @@ const AppsData = [
       sub: "Photography",
     },
     rates: 9.2,
-    size: getRandomSize(),
+    size: "100 MB",
   },
   {
     id: 6,
@@ -81,7 +63,7 @@ const AppsData = [
       sub: "Personalization",
     },
     rates: 5.7,
-    size: getRandomSize(),
+    size: "607 MB",
   },
   {
     id: 7,
@@ -92,7 +74,7 @@ const AppsData = [
       sub: "Personalization",
     },
     rates: 6.8,
-    size: getRandomSize(),
+    size: "900 MB",
   },
   {
     id: 8,
@@ -103,19 +85,19 @@ const AppsData = [
       sub: "Tools",
     },
     rates: 6.2,
-    size: getRandomSize(),
+    size: "809 MB",
   },
-  {
-    id: 9,
-    img: "https://qn-resource.playmods.net/prd/image/e0db4c1f-9326-4630-9a6b-93fd8f01f8de.png-160webp",
-    name: "Logic Circuit Simulator Pro",
-    catagory: {
-      main: "Premium Unlocked",
-      sub: "Education",
-    },
-    rates: 6.1,
-    size: getRandomSize(),
-  },
+  // {
+  //   id: 9,
+  //   img: "https://qn-resource.playmods.net/prd/image/e0db4c1f-9326-4630-9a6b-93fd8f01f8de.png-160webp",
+  //   name: "Logic Circuit Simulator Pro",
+  //   catagory: {
+  //     main: "Premium Unlocked",
+  //     sub: "Education",
+  //   },
+  //   rates: 6.1,
+  //   size: getRandomSize(),
+  // },
 ];
 
 export default AppsData;

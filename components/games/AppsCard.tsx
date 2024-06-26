@@ -11,9 +11,9 @@ const AppsCard = () => {
   return (
     <div>
       <Card className='bg-white mt-5 overflow-hidden'>
-        <CardContent className='p-0'>
-          <AppsHeading title='Newest >' setGames={setGames} games={games} />
-          <div className='p-4'>
+        <CardContent className='p-[40px]'>
+          <AppsHeading title='Newest' setGames={setGames} games={games} />
+          <div>
             {games ? (
               <GamesList data={GamesData} />
             ) : (

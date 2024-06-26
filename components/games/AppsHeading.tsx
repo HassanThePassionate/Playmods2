@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa6";
 
 interface AppsHeadingProps {
   title: string;
@@ -11,11 +12,19 @@ const AppsHeading = ({ title, setGames, games }: AppsHeadingProps) => {
   };
   return (
     <div>
-      <div className="flex items-center justify-between h-[56px] bg-[#fbfbfb] ">
-        <h3 className="text-[18px] relative px-[17px]">{title}</h3>
-        <div className="flex items-center gap-4 px-4">
+      <div className='flex items-center justify-between mb-6 '>
+        <div className='flex items-center gap-2 '>
+          <h3 className='text-[20px]  font-semibold'>{title}</h3>
+          <Link
+            href='#'
+            className='hover:bg-[#e9e9e9] transition duration-300 p-3 rounded-full'
+          >
+            <FaArrowRight size={18} />
+          </Link>
+        </div>
+        <div className='flex items-center gap-4 px-4'>
           <span
-            className={`text-sm cursor-pointer ${
+            className={`text-[16px] cursor-pointer ${
               games
                 ? "underline text-blue-600"
                 : "text-[#999] hover:text-[#5342F6]"
@@ -25,7 +34,7 @@ const AppsHeading = ({ title, setGames, games }: AppsHeadingProps) => {
             Games
           </span>
           <span
-            className={`text-sm cursor-pointer ${
+            className={`text-[16px] cursor-pointer ${
               games
                 ? " text-[#999] hover:text-[#5342F6] "
                 : "underline text-blue-600"

@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaWindows } from "react-icons/fa";
 import { BsStarFill } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
 
 interface GameListProps {
   data: Array<{
@@ -27,8 +25,8 @@ const GamesList = ({ data }: GameListProps) => {
           <Image
             src={elem.img}
             alt='img'
-            height={80}
-            width={80}
+            height={78}
+            width={78}
             className='h-[80px] w-[80px] rounded-xl relative overflow-hidden'
           />
 

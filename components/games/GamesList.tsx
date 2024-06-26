@@ -27,7 +27,7 @@ const GamesList = ({ data }: GameListProps) => {
             alt='img'
             height={78}
             width={78}
-            className='h-[80px] w-[80px] rounded-xl relative overflow-hidden'
+            className='h-[78px] w-[78px] rounded-xl relative overflow-hidden'
           />
 
           <div className='flex flex-col gap-1'>

@@ -9,7 +9,7 @@ const Tags = () => {
           <Link href='#' key={data.title}>
             <Badge
               variant='secondary'
-              className='px-[26px] hover:bg-[#ddd] h-[32px] font-normal text-sm mr-[8px] mb-[14px]'
+              className='px-[26px] hover:bg-[#ddd] h-[32px] font-normal text-sm mr-[3px] mb-[14px]'
             >
               {data.title}
             </Badge>

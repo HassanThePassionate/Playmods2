@@ -22,7 +22,7 @@ const GamesList = ({ data }: GameListProps) => {
         <Link
           href={`/game/${elem.id}`}
           key={elem.img}
-          className='flex gap-2 relative items-center link transition duration-300 rounded-md hover:bg-[#f3f3f3] hover:shadow-md hover:text-blue-600'
+          className='flex gap-2 relative items-center link transition duration-300 p-[10px] rounded-md hover:bg-[#f3f3f3] hover:shadow-md hover:text-blue-600'
         >
           <Image
             src={elem.img}

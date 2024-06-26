@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper/modules";
 import Image from "next/image";
+
 const Slider = () => {
   return (
     <>
@@ -15,7 +16,7 @@ const Slider = () => {
         navigation={true}
         modules={[Navigation]}
         slidesPerView={"auto"}
-        className='mySwiper'
+        className='mySwiper '
         spaceBetween={15}
         style={{
           margin: "30px 24px 15px",
@@ -27,6 +28,7 @@ const Slider = () => {
             alt='img'
             height={378}
             width={672}
+            className='w-full '
           />
         </SwiperSlide>
         <SwiperSlide className='swiper_slide'>
@@ -35,6 +37,7 @@ const Slider = () => {
             alt='img'
             height={378}
             width={672}
+            className='w-full '
           />
         </SwiperSlide>
         <SwiperSlide className='swiper_slide'>
@@ -43,6 +46,7 @@ const Slider = () => {
             alt='img'
             height={378}
             width={672}
+            className='w-full '
           />
         </SwiperSlide>
         <SwiperSlide className='swiper_slide'>
@@ -51,14 +55,16 @@ const Slider = () => {
             alt='img'
             height={378}
             width={672}
+            className='w-full '
           />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='swiper_slide'>
           <Image
             src='https://qn-resource.playmods.net/prd/image/689d843a-4fe6-465e-9631-6f0d8a538e2e.png-subjectDetailwebp'
             alt='img'
             height={378}
             width={672}
+            className='w-full '
           />
         </SwiperSlide>
       </Swiper>

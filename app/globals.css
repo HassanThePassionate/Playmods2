@@ -113,8 +113,3 @@ body {
   font-size: 14px;
   color: #666;
 }
-.swiper_slide {
-  height: 100%;
-  width: auto !important;
-  margin-right: 15px;
-}

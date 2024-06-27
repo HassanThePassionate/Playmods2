@@ -16,7 +16,7 @@ const Page = () => {
   }
 
   return (
-    <div>
+    <div className='system-ui-font'>
       <GamesCard img={item.img} title={item.name} rate={item.rates} />
       <HistoryVersion title={item.name} />
       <AppsCard />

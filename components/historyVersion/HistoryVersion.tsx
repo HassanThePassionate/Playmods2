@@ -6,33 +6,42 @@ interface HistoryVersionProps {
 }
 const HistoryVersion = ({ title }: HistoryVersionProps) => {
   return (
-    <div className='max-w-[1140px] mx-auto my-10'>
-      <Card>
-        <Heading />
-        <CardContent>
-          <div className='grid grid-cols-2 gap-10'>
-            <Link
-              href='#'
-              className='bg-[#F9FBFD] border rounded-lg hover:text-blue-600   p-5 mt-5 flex flex-col'
-            >
-              <h3 className='mb-4 text-sm font-bold'>{title} v1.0 Mod Apk</h3>
-              <div className='flex items-center justify-between text-sm'>
-                <div className='flex items-center mt-1'>
+    <div className='mt-4 '>
+      <Card className='bg-gradient-to-tl to-[#E0FFFF] from-white '>
+        <CardContent className='p-[40px]'>
+          <Heading />
+          <div className='flex items-center justify-between '>
+            <div className='flex items-center gap-3'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='48'
+                height='48'
+                viewBox='0 -960 960 960'
+                className='icon'
+                fill='#666'
+              >
+                <path d='M160-80q-33 0-56.5-23.5T80-160v-640q0-33 23.5-56.5T160-880h320l240 240v170h-80v-130H440v-200H160v640h440v80H160Zm0-80v-640 640Zm40-40q4-49 30-90t68-65l-38-68q0-1 4-15 5-2 9.5-2t6.5 5l39 70q20-8 40-12.5t41-4.5q21 0 41 4.5t40 12.5l39-70 15-4q5 2 6 7t-1 9l-38 68q42 24 68 65t30 90H200Zm110-60q8 0 14-6t6-14q0-8-6-14t-14-6q-8 0-14 6t-6 14q0 8 6 14t14 6Zm180 0q8 0 14-6t6-14q0-8-6-14t-14-6q-8 0-14 6t-6 14q0 8 6 14t14 6ZM800-80 640-240l56-57 64 63v-166h80v166l64-63 56 57L800-80Z'></path>
+              </svg>
+              <div>
+                <h3 className=' font-bold'>{title} v1.0 Mod Apk</h3>
+                <div className='flex items-center mt-1 text-[#666] text-sm '>
                   <div>573.7MB</div>
                   <div className='w-[1px] h-[10px] bg-[#97979e] mx-[10px] '></div>
                   <div>2024-05-11</div>
-                </div>
-                <div>
-                  <Link
-                    href='#'
-                    className='bg-[#5342f6] h-[36px]  flex items-center justify-center px-[15px] rounded-full text-white'
-                  >
-                    Download
-                  </Link>
+                  <div className='w-[1px] h-[10px] bg-[#97979e] mx-[10px] '></div>
+                  <div>24.6.17R</div>
                 </div>
               </div>
-            </Link>
-            <div></div>
+            </div>
+
+            <div>
+              <Link
+                href='#'
+                className='bg-[#5342f6] h-[36px] hover:bg-blue-700   flex items-center justify-center px-5 min-h-[40px] rounded-full text-white'
+              >
+                Download Unlocked APK
+              </Link>
+            </div>
           </div>
         </CardContent>
       </Card>

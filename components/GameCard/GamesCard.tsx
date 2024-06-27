@@ -69,16 +69,13 @@ const GamesCard = ({ img, title, rate }: GameCard) => {
               />
               <div className='flex items-center justify-between w-full'>
                 <div className=' self-start'>
-                  <Link
-                    href='#'
-                    className='text-[20px] font-bold cursor-pointer block hover:text-blue-600'
-                  >
+                  <h1 className='text-[24px] font-bold cursor-pointer block  hover:text-blue-600'>
                     {title} Mod Apk v1.0 (Mod <br /> Menu/Unlock/Latest Version)
-                  </Link>
-                  <span className=' py-[5px] block text-sm'>
+                  </h1>
+                  <p className=' py-[5px] block text-[16px]'>
                     App Name: {title}
-                  </span>
-                  <span className='block text-sm'>PlateForm: Windows</span>
+                  </p>
+                  <p className='block text-[16px]'>PlateForm: Windows</p>
                   <div className='text-sm text-[#656570] flex gap-4 pt-[10px]'>
                     <span>1.0 for Android </span>
                     <span>Updated on May 11, 2024</span>

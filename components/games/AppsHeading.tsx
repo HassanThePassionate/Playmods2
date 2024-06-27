@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
+import { Badge } from "../ui/badge";
 
 interface AppsHeadingProps {
   title: string;
@@ -22,27 +23,25 @@ const AppsHeading = ({ title, setGames, games }: AppsHeadingProps) => {
             <FaArrowRight size={18} />
           </Link>
         </div>
-        <div className='flex items-center gap-4 px-4'>
-          <span
-            className={`text-[16px] cursor-pointer ${
-              games
-                ? "underline text-blue-600"
-                : "text-[#999] hover:text-[#5342F6]"
+        <div className='flex items-center gap-2 '>
+          <Badge
+            variant={"outline"}
+            className={`text-[14px] cursor-pointer px-4 ${
+              games ? " text-blue-700 bg-blue-100" : " hover:bg-blue-100"
             } `}
             onClick={GamesHandler}
           >
             Games
-          </span>
-          <span
-            className={`text-[16px] cursor-pointer ${
-              games
-                ? " text-[#999] hover:text-[#5342F6] "
-                : "underline text-blue-600"
+          </Badge>
+          <Badge
+            variant={"outline"}
+            className={`text-[14px] cursor-pointer px-4${
+              games ? "  hover:bg-blue-100 " : " text-blue-700 bg-blue-100"
             } `}
             onClick={GamesHandler}
           >
             Apps
-          </span>
+          </Badge>
         </div>
       </div>
     </div>

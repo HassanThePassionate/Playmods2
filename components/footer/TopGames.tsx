@@ -18,7 +18,7 @@ const TopGames = () => {
               <Link href='#'>
                 <Badge
                   variant={"outline"}
-                  className='text-[14px] pr-[15px] pl-[12px] hover:bg-[#fbfbfb]'
+                  className='text-[14px] pr-[15px] pl-[12px] min-h-[36px] hover:bg-[#fbfbfb]'
                 >
                   {elem.catagory.sub}
                 </Badge>

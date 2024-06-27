@@ -18,7 +18,7 @@ const TopApps = () => {
               <Link href='#'>
                 <Badge
                   variant={"outline"}
-                  className='text-[14px] pr-[15px] pl-[12px] hover:bg-[#fbfbfb]'
+                  className='text-[14px] pr-[15px] pl-[12px] hover:bg-[#fbfbfb] min-h-[36px] '
                 >
                   {elem.catagory.sub}
                 </Badge>

@@ -3,7 +3,7 @@ import Link from "next/link";
 const Copyright = () => {
   return (
     <div>
-      <div className='flex items-center p-4 border-t border-[#999]  justify-center mt-[20px]'>
+      <div className='flex items-center p-4 border-t   justify-center mt-[20px]'>
         <p className='pr-1 text-sm text-[#666] '>
           Copyright © 2024 PlayMods All rights reserved.
         </p>

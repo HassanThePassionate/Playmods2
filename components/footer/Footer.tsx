@@ -1,7 +1,9 @@
 import Logo from "../navbar/Logo";
+import Company from "./Company";
 import Copyright from "./Copyright";
-import Links from "./Links";
-import TopLinks from "./TopLinks";
+import TopApps from "./TopApps";
+import TopGames from "./TopGames";
+import Trend from "./Trend";
 
 const Footer = () => {
   return (
@@ -9,9 +11,15 @@ const Footer = () => {
       <div className='containers'>
         <div className='mb-8'>
           <Logo />
+          <div className='mt-[48px] gridi gap-[42px]'>
+            <Trend />
+            <div className='flex flex-col gap-12'>
+              <TopGames />
+              <TopApps />
+            </div>
+            <Company />
+          </div>
         </div>
-        <TopLinks />
-        <Links />
       </div>
       <Copyright />
     </div>

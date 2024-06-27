@@ -9,7 +9,6 @@ const Hero = () => {
   return (
     <div>
       <div className='h-full w-full bg-white px-3 py-5'>
-        <Search />
         <Tabs />
         <Tags />
         <Download />

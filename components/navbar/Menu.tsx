@@ -1,20 +1,9 @@
 import MenuList from "./MenuList";
-import Languages from "./Languages";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu";
-import Link from "next/link";
+import { IoMdTrendingUp } from "react-icons/io";
 
 const Menu = () => {
   return (
-    <div className=' flex items-center gap-12 '>
+    <div className=' flex items-center gap-6 '>
       <MenuList
         title='Games'
         icon='https://qn-resource.playmods.net/html/2024052401/static/www/images/common/icon-menu-games.png'
@@ -24,10 +13,10 @@ const Menu = () => {
         icon='https://qn-resource.playmods.net/html/2024052401/static/www/images/common/icon-menu-apps.png'
       />
       <MenuList
-        title='Ranking'
+        title='Top Chart'
         icon='https://qn-resource.playmods.net/html/2024052401/static/www/images/common/icon-menu-rankings.png'
       />
-      <MenuList
+      {/*  <MenuList
         title='Modules'
         icon='https://qn-resource.playmods.net/html/2024052401/static/www/images/common/icon-menu-mod.png'
       />
@@ -69,8 +58,8 @@ const Menu = () => {
       <MenuList
         title='Topic'
         icon='https://qn-resource.playmods.net/html/2024052401/static/www/images/common/icon-menu-topics.png'
-      />
-      <Languages />
+      /> */}
+      {/* <Languages /> */}
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import Trending from "../Trending";
 import GamesCategory from "../category/GamesCategory";
+import { Card, CardContent } from "../ui/card";
 import Download from "./Download";
 import Search from "./Search";
 import Tabs from "./Tabs";
@@ -7,20 +8,28 @@ import Tags from "./Tags";
 
 const Hero = () => {
   return (
-    <div>
-      <div className='h-full w-full bg-white px-3 py-5'>
-        <Tabs />
-        <Tags />
-        <Download />
-      </div>
-      <div className='h-[300px] mt-6 w-full bg-white '></div>
-      <div className='h-full mt-6 w-full bg-white '>
-        <GamesCategory />
-      </div>
-      <div className='h-full mt-6 w-full bg-white p-5 '>
-        <Trending />
-      </div>
-    </div>
+    <>
+      <Card>
+        <CardContent className='h-full w-full  px-3 py-5'>
+          <Tabs />
+          <Tags />
+          <Download />
+        </CardContent>
+      </Card>
+      <Card className='mt-6 overflow-hidden'>
+        <CardContent className='h-[300px]  w-full p-0'></CardContent>
+      </Card>
+      <Card className='mt-6 overflow-hidden'>
+        <CardContent className='h-full  w-full p-0'>
+          <GamesCategory />
+        </CardContent>
+      </Card>
+      <Card className='mt-6 overflow-hidden'>
+        <CardContent className='h-full  w-full p-5'>
+          <Trending />
+        </CardContent>
+      </Card>
+    </>
   );
 };
 

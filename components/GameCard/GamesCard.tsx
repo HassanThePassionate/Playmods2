@@ -29,36 +29,36 @@ const GamesCard = ({ img, title, rate }: GameCard) => {
   };
   return (
     <>
-      <Breadcrumb className='my-2 ml-1'>
-        <BreadcrumbList>
-          <BreadcrumbItem>
-            <BreadcrumbLink>
-              <Link href='/'>Home</Link>
-            </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <BreadcrumbLink>
-              <Link href='#'>Games</Link>
-            </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <BreadcrumbLink>
-              <Link href='#'>Simulation</Link>
-            </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <BreadcrumbPage className='text-blue-600'>
-              Melon Playground Mods inside
-            </BreadcrumbPage>
-          </BreadcrumbItem>
-        </BreadcrumbList>
-      </Breadcrumb>
       <Card className='p-0'>
         <CardContent className='p-0'>
           <div className='px-6'>
+            <Breadcrumb className='  mt-4'>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink>
+                    <Link href='/'>Home</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbLink>
+                    <Link href='#'>Games</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbLink>
+                    <Link href='#'>Simulation</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbPage className='text-blue-600'>
+                    Melon Playground Mods inside
+                  </BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
             <div className='flex  gap-4 mt-10'>
               <Image
                 src={img}

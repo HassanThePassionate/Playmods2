@@ -18,11 +18,7 @@ const Hero = () => {
       <Card className='mt-6 overflow-hidden'>
         <CardContent className='h-[300px]  w-full p-0'></CardContent>
       </Card>
-      <Card className='mt-6 overflow-hidden'>
-        <CardContent className='h-full  w-full p-0'>
-          <GamesCategory />
-        </CardContent>
-      </Card>
+
       <Card className='mt-6 overflow-hidden'>
         <CardContent className='h-full  w-full p-5'>
           <Trending />

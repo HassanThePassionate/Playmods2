@@ -2,7 +2,6 @@ import Trending from "../Trending";
 import GamesCategory from "../category/GamesCategory";
 import { Card, CardContent } from "../ui/card";
 import Download from "./Download";
-import Search from "./Search";
 import Tabs from "./Tabs";
 import Tags from "./Tags";
 

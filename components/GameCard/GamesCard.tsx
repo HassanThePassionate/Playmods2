@@ -91,17 +91,17 @@ const GamesCard = ({ img, title, rate }: GameCard) => {
                 <p className='flex items-center gap-1 justify-center'>
                   {rate} <TiStarFullOutline size={14} />
                 </p>
-                <p>67 reviews</p>
+                <p className='text-[12px] text-[#666]'>67 reviews</p>
               </div>
               <div className='w-[1px] h-[20px] bg-[#97979e]'></div>
               <div className='flex flex-col items-center'>
                 <p>11K+</p>
-                <p>Downloads</p>
+                <p className='text-[12px] text-[#666]'>Downloads</p>
               </div>
               <div className='w-[1px] h-[20px] bg-[#97979e] mx-[10px]'></div>
               <div className='flex flex-col items-center'>
                 <p>200MB</p>
-                <p>Size</p>
+                <p className='text-[12px] text-[#666]'>Size</p>
               </div>
             </div>
             <div className='flex items-center gap-4'>

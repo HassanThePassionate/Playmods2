@@ -2,29 +2,29 @@ import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 interface CategoryHeadingProps {
-  click: () => void;
-  category: boolean;
+  white: boolean;
+  black: boolean;
 }
-const CategoryHeading = ({ click, category }: CategoryHeadingProps) => {
+const CategoryHeading = ({ white, black }: CategoryHeadingProps) => {
   return (
     <div className='flex justify-between items-center px-4 h-[56px] bg-[#fbfbfb]'>
       <div className='flex items-center  text-[18px]'>
-        <span
+        <Link
+          href='/result/game'
           className={`cursor-pointer p-4 ${
-            category ? "bg-white " : "hover:text-blue-600"
+            white ? "bg-white " : "hover:text-blue-600"
           } `}
-          onClick={click}
         >
           Games
-        </span>
-        <span
+        </Link>
+        <Link
+          href='/result/andriod'
           className={`cursor-pointer p-4 ${
-            category ? "hover:text-blue-600" : "bg-white "
+            black ? "bg-white " : "hover:text-blue-600 "
           } `}
-          onClick={click}
         >
           Apps
-        </span>
+        </Link>
       </div>
       <Link
         href='#'

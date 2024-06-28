@@ -19,7 +19,7 @@ const Slider = () => {
         className='mySwiper '
         spaceBetween={5}
         style={{
-          margin: "30px 24px 15px",
+          margin: "24px 0 15px",
         }}
       >
         {data.map((elem) => {
